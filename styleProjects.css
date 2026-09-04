@@ -1,0 +1,154 @@
+.navbar-color{
+ background-color:#ffcc40 !important ; 
+ height:80px !important;
+}
+
+nav {
+    
+    font-family:times;
+    text-decoration:bold;
+    padding:20px;
+  
+    
+}
+
+
+.navbar-brand {
+    font-weight:800 !important;
+    font-size:150%;
+}
+header h1 {
+   background-color: rgba(255, 255, 255, 0.2);
+    
+    color:#F6F3A9; 
+    font-size:70px;
+    text-decoration:bold;
+    
+}
+hr {
+    font-weight:800;
+    height:30px !important;
+    
+}
+   
+header {
+    font-family:times;
+    text-align:center;
+    margin-top:70px;
+    
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("https://codehs.com/uploads/bdc1a33a29b1428c687401da503b5a9f");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+footer{
+    
+    
+    background-color:#550000;
+    color:white;
+    text-align:center;
+    
+    font-family:times;
+    
+    padding:10px;
+    
+    }
+    
+    
+
+    a:link {
+  color: Yellow; /* Unvisited link */
+  text-decoration: none; /* Removes the default underline */
+}
+a:hover {
+    font-size:110%;
+    text-decoration:italic;
+}
+
+
+.col{
+    text-align:center;    
+    padding:10px;
+    background-color:#ffcc40;
+    margin:30px;
+    font-size:50px;
+    font-family:times;
+    font-weight:800;
+    
+}
+
+.active {
+ font-size:150% !important;
+ text-decoration:italic !important;
+    
+}
+
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  z-index: 9998;
+}
+
+
+
+body {
+    background-color:#f3eec3;
+     
+}
+
+
+
+
+
+
+p {
+    font-size:30px;
+    font-family:times;
+}
+
+
+  .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999; /* This brings it to the front */
+}
+
+
+
+
+
+
+
+
+
+    
+    
+    
+}

@@ -1,0 +1,229 @@
+.navbar-color{
+ background-color:#ffcc40 !important ; 
+ height:80px !important;
+}
+
+nav {
+    
+    font-family:times;
+    text-decoration:bold;
+    padding:20px;
+  
+    
+}
+
+
+.navbar-brand {
+    font-weight:800 !important;
+    font-size:150%;
+}
+header h1 {
+   background-color: rgba(255, 255, 255, 0.2);
+    padding:10px;
+    color:#F6F3A9; 
+    font-size:70px;
+    text-decoration:bold;
+}
+hr {
+    font-weight:800;
+    height:30px !important;
+    
+}
+   
+header {
+    font-family:times;
+    text-align:center;
+    
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("https://codehs.com/uploads/7672185cc2197c4234e77e2eaddfa292");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallaxBio {
+  /* The image used */
+  background-image: url("https://codehs.com/uploads/0faac6aa0c375d89ea62f2def89d673c");
+
+  /* Set a specific height */
+  min-height: 800px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer{
+    
+    
+    background-color:#0b0014;
+    color:white;
+    text-align:center;
+    
+    font-family:times;
+    
+    padding:10px;
+    h1{
+        font-size:10px !important;
+    }
+    }
+    
+
+    a:link {
+  color: Yellow; /* Unvisited link */
+  text-decoration: none; /* Removes the default underline */
+}
+a:hover {
+    font-size:110%;
+    text-decoration:italic;
+}
+
+header h3{
+     background-color: rgba(255, 255, 255, 0.2);
+    padding:10px;
+    color:#F6F3A9; 
+    font-size:20px;
+    text-decoration:bold;
+    margin-top:200px;
+    margin:30px;
+}
+.active {
+ font-size:150% !important;
+ text-decoration:italic !important;
+    
+}
+    
+    
+    
+.bio1{
+ min-height:200px;
+ background-color: !important;   
+ float:left;
+ width:80%;
+ border: 3px solid #f1f1f1;
+    
+}  
+.bio2{
+ min-height:200px;
+    
+ float:right;
+ width:80%;
+ margin:20px;
+ border: 3px solid #f1f1f1;
+    
+}  
+    
+.carousel-item {
+    margin-top:60px;
+    margin-bottom:60px;
+    height: 300px; /* Adjust this value as needed (e.g., 50vh for viewport height) */
+    overflow: hidden;
+    border: 3px solid #f1f1f1;
+}
+
+/* 2. Style the images within the items */
+.carousel-item img {
+    height: 100%;      /* Make image height match the carousel-item height */
+    width: 80%;       /* Make image width match the carousel-item width */
+    object-fit: cover; /* Scale and crop the image to cover the entire space */
+    object-position: center; /* Center the image within its container */
+}
+    
+    
+    .carouselcontrol {
+        font-family:times;
+        font-weight:500px;
+        color:#000000 !important;
+        text-decoration:bold;
+    }
+    
+    
+    
+    
+    
+    body, html {
+  height: 100%;
+  margin-bottom:10px !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("https://codehs.com/uploads/0faac6aa0c375d89ea62f2def89d673c");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height:240% !important;
+  
+
+  /* Center and scale the image nicely */
+  
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  margin-top:130px !important;
+   padding-top: 70px;
+}
+    
+    .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999; /* This brings it to the front */
+}
+
+    li{
+        margin-left:40px!important;
+    }
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

@@ -1,0 +1,144 @@
+.navbar-color{
+ background-color:#ffcc40 !important ; 
+ height:80px !important;
+}
+
+nav {
+    
+    font-family:times;
+    text-decoration:bold;
+    padding:20px;
+  
+    
+}
+
+
+.navbar-brand {
+    font-weight:800 !important;
+    font-size:150%;
+}
+header h1 {
+   background-color: rgba(255, 255, 255, 0.2);
+    padding:10px;
+    color:#F6F3A9; 
+    font-size:70px;
+    text-decoration:bold;
+}
+hr {
+    font-weight:800;
+    height:30px !important;
+    
+}
+   
+header {
+    font-family:times;
+    text-align:center;
+    
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("https://codehs.com/uploads/7672185cc2197c4234e77e2eaddfa292");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+footer{
+    
+    
+    background-color:#0b0014;
+    color:white;
+    text-align:center;
+    
+    font-family:times;
+    
+    padding:10px;
+    h1{
+        font-size:10px !important;
+    }
+    }
+    
+
+    a:link {
+  color: Yellow; /* Unvisited link */
+  text-decoration: none; /* Removes the default underline */
+}
+a:hover {
+    font-size:110%;
+    text-decoration:italic;
+}
+
+header h3{
+     background-color: rgba(255, 255, 255, 0.2);
+    padding:10px;
+    color:#F6F3A9; 
+    font-size:20px;
+    text-decoration:bold;
+    margin-top:200px;
+    margin:30px;
+}
+.active {
+ font-size:150% !important;
+ text-decoration:italic !important;
+    
+}
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+    body, html {
+  height: 100%;
+  margin-bottom:10px !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+    
+    .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999; /* This brings it to the front */
+}
+header{
+    margin-top:60px !important;
+}
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
