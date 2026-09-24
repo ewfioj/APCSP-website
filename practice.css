@@ -1,0 +1,195 @@
+
+
+button{
+    width:40px;
+    height:40px;
+}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #242424;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    perspective: 1000px;
+}
+
+.container {
+    position: absolute;  /* Removes it from normal layout flow */
+    top: 30px;           /* Distance from the top of the screen */
+    right: 30px;         /* Distance from the right side of the screen */
+    transform-style: preserve-3d;
+    z-index: 100;        /* Ensures it sits safely on top of any page content */
+}
+
+.box-card {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+    cursor: pointer;
+}
+
+.box-card {
+    animation: rotate3d 8s infinite linear;
+}
+
+.face {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    backface-visibility: visible;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #2a2a2a, #383838);
+    border: 2px solid #646cff;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.face::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+    top: -100%;
+    left: -100%;
+    transition: all 0.5s ease;
+    transform: translateZ(20px);
+}
+
+.face::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.05) 50%,
+        transparent 100%
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.face:hover::before {
+    top: 100%;
+    left: 100%;
+}
+
+.face:hover::after {
+    opacity: 1;
+}
+
+.front {
+    transform: translateZ(25px);
+    border-color: #646cff;
+}
+
+.back {
+    transform: translateZ(-25px) rotateY(180deg);
+    border-color: #00bcd4;
+}
+
+.right {
+    transform: translateX(25px) rotateY(90deg);
+    border-color: #4caf50;
+}
+
+.left {
+    transform: translateX(-25px) rotateY(-90deg);
+    border-color: #ff4081;
+}
+
+.top {
+    transform: translateY(-25px) rotateX(90deg);
+    border-color: #ffc107;
+}
+
+.bottom {
+    transform: translateY(25px) rotateX(-90deg);
+    border-color: #9c27b0;
+}
+
+@keyframes rotate3d {
+    0% {
+        transform: rotateX(0) rotateY(0);
+    }
+    25% {
+        transform: rotateX(90deg) rotateY(90deg);
+    }
+    50% {
+        transform: rotateX(180deg) rotateY(180deg);
+    }
+    75% {
+        transform: rotateX(270deg) rotateY(270deg);
+    }
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .box-card {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .front { transform: translateZ(25px); }
+    .back { transform: translateZ(-25px) rotateY(180deg); }
+    .right { transform: translateX(25px) rotateY(90deg); }
+    .left { transform: translateX(-25px) rotateY(-90deg); }
+    .top { transform: translateY(-25px) rotateX(90deg); }
+    .bottom { transform: translateY(25px) rotateX(-90deg); }
+}
+/* 1. CRITICAL: Change this to hidden so back faces don't steal clicks */
+.face {
+    backface-visibility: hidden; 
+}
+
+/* 2. Style your buttons so they look good and fill the face interactive area */
+.face button {
+    background: #646cff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    z-index: 10; /* Ensure button sits above the ::before pseudo-elements */
+}
+
+.face button:hover {
+    background: #535bf2;
+    transform: scale(1.05);
+}
+
+/* 3. Assign custom theme colors to match your existing face borders */
+.back button { background: #00bcd4; }
+.back button:hover { background: #0097a7; }
+
+.right button { background: #4caf50; }
+.right button:hover { background: #388e3c; }
+
+.left button { background: #ff4081; }
+.left button:hover { background: #f50057; }
+
+.top button { background: #ffc107; color: #242424; }
+.top button:hover { background: #ffa000; }
+
+.bottom button { background: #9c27b0; }
+.bottom button:hover { background: #7b1fa2; }
